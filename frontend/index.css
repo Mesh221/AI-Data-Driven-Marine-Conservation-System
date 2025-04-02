@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+body {
+  @apply bg-blue-50 text-gray-900;
+}
+
+/* Components */
+.chat-container {
+  @apply flex flex-col h-[80vh] w-full max-w-2xl rounded-lg bg-white shadow-lg;
+}
+
+.chat-header {
+  @apply flex justify-between p-4 bg-blue-500 text-white rounded-t-lg;
+}
+
+.chat-box {
+  @apply flex-1 overflow-y-auto bg-gray-100 p-4;
+}
+
+.message {
+  @apply flex mb-4;
+}
+
+.message-bubble {
+  @apply max-w-[70%] rounded-lg p-3 shadow;
+}
+
+.user-message {
+  @apply justify-end bg-blue-500 text-white;
+}
+
+.ai-message {
+  @apply justify-start bg-white;
+}
+
+.input-container {
+  @apply flex rounded-b-lg border-t bg-white p-4;
+}
+
+.input-field {
+  @apply flex-1 rounded-l border p-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.send-button {
+  @apply rounded-r bg-blue-500 p-2 text-white hover:bg-blue-600 disabled:bg-blue-300;
+}
+
+.fetch-button {
+  @apply bg-white text-blue-500 px-3 py-1 rounded;
+}
